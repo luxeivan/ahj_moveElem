@@ -1,5 +1,12 @@
 body {
     color: #999;
+    box-sizing: border-box;
+}
+ul{
+    list-style-type: none;
+}
+li{
+    
 }
 
 .container {
@@ -9,10 +16,20 @@ body {
 
 .grid {
     display: flex;
-    width: 100%;
+    flex-wrap: wrap;
+    width: 400px;
+    margin: 0 auto;
 }
 .grid__elem{
-    width: 240px;
-    height: 240px;
+    width: 98px;
+    height: 98px;
     border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.image{
+    display: block;
+    width: 100%;
+    margin: 0 auto;
 }

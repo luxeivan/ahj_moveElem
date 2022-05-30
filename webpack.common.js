@@ -6,7 +6,7 @@ module.exports = {
   target: 'web',
   output: {
     path: path.resolve(__dirname, '/dist'),
-    publicPath: '/',
+    publicPath: '/ahj_moveElem',
   },
   module: {
     rules: [
@@ -35,6 +35,13 @@ module.exports = {
         test: /\.svg$/,
         type: 'asset/resource',
       },
+      {
+        test: /\.(png|jpe?g|gif)$/i,
+        loader: 'file-loader',
+        options: {
+          name: '[path][name].[ext]',
+        }
+      }
     ],
   },
   plugins: [
