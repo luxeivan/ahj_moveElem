@@ -5,8 +5,8 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 module.exports = {
   target: 'web',
   output: {
-    path: path.resolve(__dirname, '/dist'),
-    publicPath: '/ahj_moveElem',
+    path: path.resolve(__dirname, 'dist'),
+    publicPath: '/ahj_moveElem/',
   },
   module: {
     rules: [
